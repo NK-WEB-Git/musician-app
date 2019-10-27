@@ -4,6 +4,11 @@ const bodyParser = require('body-parser');
 const jsonParser = bodyParser.json();
 const schema = require('../store/schema');
 
+// update build
+router.get('/update', (req, res) => {
+  res.status('200').send("Update for building!");
+});
+
 // healthcheck
 router.get('/health', (req, res) => {
   res.status('200').send("Status: ok!");
